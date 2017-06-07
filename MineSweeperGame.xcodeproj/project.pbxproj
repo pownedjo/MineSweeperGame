@@ -64,12 +64,11 @@
 		177ED9781EDDD31400B68FEB /* MineSweeperGame */ = {
 			isa = PBXGroup;
 			children = (
-				177ED9791EDDD31400B68FEB /* AppDelegate.swift */,
+				177ED97D1EDDD31400B68FEB /* Main.storyboard */,
 				177ED99C1EDF071100B68FEB /* Helpers */,
 				177ED9951EDE21A400B68FEB /* ViewController */,
 				177ED9931EDE219200B68FEB /* View */,
 				177ED9941EDE21A000B68FEB /* Model */,
-				177ED97D1EDDD31400B68FEB /* Main.storyboard */,
 				177ED9801EDDD31400B68FEB /* Assets.xcassets */,
 				177ED9821EDDD31400B68FEB /* LaunchScreen.storyboard */,
 				177ED9851EDDD31400B68FEB /* Info.plist */,
@@ -82,7 +81,7 @@
 			children = (
 				177ED99A1EDEF3AF00B68FEB /* CellButton.swift */,
 			);
-			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		177ED9941EDE21A000B68FEB /* Model */ = {
@@ -91,7 +90,7 @@
 				177ED9961EDE21FF00B68FEB /* Grid.swift */,
 				177ED9981EDE221600B68FEB /* Cell.swift */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		177ED9951EDE21A400B68FEB /* ViewController */ = {
@@ -99,16 +98,17 @@
 			children = (
 				177ED98B1EDDD50300B68FEB /* MainVC.swift */,
 			);
-			name = ViewController;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		177ED99C1EDF071100B68FEB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				177ED9791EDDD31400B68FEB /* AppDelegate.swift */,
 				177ED99D1EDF072400B68FEB /* Helper.swift */,
 				177ED99F1EDF142A00B68FEB /* Difficulty.swift */,
 			);
-			name = Helpers;
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
