@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		177ED97A1EDDD31400B68FEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED9791EDDD31400B68FEB /* AppDelegate.swift */; };
-		177ED97C1EDDD31400B68FEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED97B1EDDD31400B68FEB /* ViewController.swift */; };
 		177ED97F1EDDD31400B68FEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ED97D1EDDD31400B68FEB /* Main.storyboard */; };
 		177ED9811EDDD31400B68FEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177ED9801EDDD31400B68FEB /* Assets.xcassets */; };
 		177ED9841EDDD31400B68FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177ED9821EDDD31400B68FEB /* LaunchScreen.storyboard */; };
+		177ED98C1EDDD50300B68FEB /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED98B1EDDD50300B68FEB /* MainVC.swift */; };
+		177ED9971EDE21FF00B68FEB /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED9961EDE21FF00B68FEB /* Grid.swift */; };
+		177ED9991EDE221600B68FEB /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED9981EDE221600B68FEB /* Cell.swift */; };
+		177ED99B1EDEF3AF00B68FEB /* CellButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED99A1EDEF3AF00B68FEB /* CellButton.swift */; };
+		177ED99E1EDF072400B68FEB /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED99D1EDF072400B68FEB /* Helper.swift */; };
+		177ED9A01EDF142B00B68FEB /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177ED99F1EDF142A00B68FEB /* Difficulty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		177ED9761EDDD31400B68FEB /* MineSweeperGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MineSweeperGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		177ED9791EDDD31400B68FEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		177ED97B1EDDD31400B68FEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		177ED97E1EDDD31400B68FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		177ED9801EDDD31400B68FEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177ED9831EDDD31400B68FEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177ED9851EDDD31400B68FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177ED98B1EDDD50300B68FEB /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		177ED9961EDE21FF00B68FEB /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		177ED9981EDE221600B68FEB /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		177ED99A1EDEF3AF00B68FEB /* CellButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellButton.swift; sourceTree = "<group>"; };
+		177ED99D1EDF072400B68FEB /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		177ED99F1EDF142A00B68FEB /* Difficulty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,50 @@
 			isa = PBXGroup;
 			children = (
 				177ED9791EDDD31400B68FEB /* AppDelegate.swift */,
-				177ED97B1EDDD31400B68FEB /* ViewController.swift */,
+				177ED99C1EDF071100B68FEB /* Helpers */,
+				177ED9951EDE21A400B68FEB /* ViewController */,
+				177ED9931EDE219200B68FEB /* View */,
+				177ED9941EDE21A000B68FEB /* Model */,
 				177ED97D1EDDD31400B68FEB /* Main.storyboard */,
 				177ED9801EDDD31400B68FEB /* Assets.xcassets */,
 				177ED9821EDDD31400B68FEB /* LaunchScreen.storyboard */,
 				177ED9851EDDD31400B68FEB /* Info.plist */,
 			);
 			path = MineSweeperGame;
+			sourceTree = "<group>";
+		};
+		177ED9931EDE219200B68FEB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				177ED99A1EDEF3AF00B68FEB /* CellButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		177ED9941EDE21A000B68FEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				177ED9961EDE21FF00B68FEB /* Grid.swift */,
+				177ED9981EDE221600B68FEB /* Cell.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		177ED9951EDE21A400B68FEB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				177ED98B1EDDD50300B68FEB /* MainVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		177ED99C1EDF071100B68FEB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				177ED99D1EDF072400B68FEB /* Helper.swift */,
+				177ED99F1EDF142A00B68FEB /* Difficulty.swift */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177ED97C1EDDD31400B68FEB /* ViewController.swift in Sources */,
+				177ED9991EDE221600B68FEB /* Cell.swift in Sources */,
+				177ED99E1EDF072400B68FEB /* Helper.swift in Sources */,
+				177ED9A01EDF142B00B68FEB /* Difficulty.swift in Sources */,
 				177ED97A1EDDD31400B68FEB /* AppDelegate.swift in Sources */,
+				177ED98C1EDDD50300B68FEB /* MainVC.swift in Sources */,
+				177ED9971EDE21FF00B68FEB /* Grid.swift in Sources */,
+				177ED99B1EDEF3AF00B68FEB /* CellButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +354,7 @@
 				177ED98A1EDDD31400B68FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
