@@ -85,6 +85,7 @@ class MainVC: UIViewController, UIGestureRecognizerDelegate
         self.flags = 0
         self.gameDifficultySelector.isEnabled = false
         self.gameView.isUserInteractionEnabled = true
+        self.flagsLabel.text = "Flags : 0"
         self.playButton.setTitle("STOP", for: UIControlState())
         timer = Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(counter), userInfo: nil, repeats: true)
     }

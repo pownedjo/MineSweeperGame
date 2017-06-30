@@ -36,6 +36,46 @@ class Grid
         }
     }
     
+
+    /* TESTING PURPOSE - SHUFFLE ARRAY */
+    func shuffleArray()
+    {
+        //var swappedArray = [[Cell]]()
+        
+        for row in 0 ..< difficulty.getBoardAxisSize()
+        {
+            for col in 0 ..< difficulty.getBoardAxisSize()
+            {
+                let random1 = Int(arc4random_uniform(UInt32(difficulty.getBoardAxisSize() - row))) + row
+                let random2 = Int(arc4random_uniform(UInt32(difficulty.getBoardAxisSize() - col))) + col
+
+                if random1 != row || random2 != col // Can't swap same element
+                {
+                    swap(&cells[row][col], &cells[random1][random2])
+                }
+            }
+        }
+    }
+    
+    
+    
+    /* TESTING PURPOSES - MINE PLACEMENT ON GRID */
+    func minePlacement()
+    {
+        shuffleArray()    // SHUFFLE ARRAY OF CELL
+
+        // PUT MINES ON FIRST x PLACE according to difficulty
+        for row in 0 ..< 3
+        {
+            for col in 0 ..< 3
+            {
+                cells[row][col].isMined = true
+                mines += 1
+            }
+        }
+        print("NUMBER OF MINES = \(mines)")
+    }
+    
     
     
     func resetGrid()
